@@ -1,4 +1,7 @@
-from PIL import Image
+import tensorflow as tf
 
-img = Image.open('captcha-imgs/7725.png')
-print(img.mode) 
+a = tf.range(1*2*3*4)
+
+a = tf.reshape(a, [4, 3, 2, 1])
+print(a)
+print(tf.transpose(a))
